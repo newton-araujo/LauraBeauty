@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 165px;
+    text-align: center;
+    background: black;
+}
+
+header .title {
+    font-size: 4rem;
+    color: white;
+    margin: 1rem;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-bar ul {
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar ul li {
+    display: inline;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-bar ul li:hover {
+    transform: translateY(-5px) scale(1.2);
+}
+
+.nav-bar ul li a:hover {
+    color: goldenrod;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
+/* -------- MAIN -------- */
+
+.main{
+    width: 100%;
+    height: 400px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.842)),
+    url('../img/proc.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main .title {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 2rem;
+ 
+}
+
+.main .title h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.main .title p {
+    width: 70%;
+    color: rgba(250, 235, 215, 0.753);
+    
+}
+
+.container_c {
+    width: 100%;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container_c .cardOne {
+    display: flex;
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.404);
+    margin-top: 2rem;
+    background-color: rgba(114, 114, 114, 0.349);
+    opacity: 0;
+    transform: translateX(50px);
+    animation: moveAction 1.4s forwards 0.2s;
+}
+
+.container_c .cardOne img {
+    width: 400px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.container_c .cardOne h3 {
+    font-size: 3rem;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.container_c .cardOne ul {
+
+    padding: 1rem;
+}
+
+.container_c .cardOne ul li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(180, 130, 2);
+}
+
+.container_c .cardOne ul li p {
+    margin: 1rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem;
+}
+
+.description img {
+    width: 450px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveLeft 5s forwards 0.2s;
+    border-radius: 1rem;
+}
+
+.description h3 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.description ul li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(180, 130, 2);
+}
+
+.description ul li p {
+    margin: 1rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+
+
+
+
+
+/*-------- footer --------*/
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 1rem;
+}
+
+footer .icons a {
+    color: black;
+    font-size: 2rem;
+}
+
+footer .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+footer .address i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*------------KeyFrame------------*/
+
+@keyframes moveAction {
+    from {
+        opacity: 0;
+        transform: translateZ(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

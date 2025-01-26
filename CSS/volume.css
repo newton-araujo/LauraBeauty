@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 165px;
+    text-align: center;
+    background: black;
+}
+
+header .title {
+    font-size: 4rem;
+    color: white;
+    margin: 1rem;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-bar ul {
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar ul li {
+    display: inline;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-bar ul li:hover {
+    transform: translateY(-5px) scale(1.2);
+}
+
+.nav-bar ul li a:hover {
+    color: goldenrod;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+/*------ Seciton Container Title ---------*/
+
+.container_title {
+    width: 100%;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_title .title {
+    padding: 1rem;
+    font-size: 3rem;
+    color: rgb(10, 10, 10);
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.container_title .description {
+    color: rgb(75, 74, 72);
+    max-width: 1400px;
+    margin-top: 2rem;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*------ Main ---------*/
+
+
+
+.containerMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    padding: 4rem;
+    perspective: 1500px;
+    
+}
+
+
+.cardOne {
+    width: 500px;
+    height: 710px;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5rem rgba(0, 0, 0, 0.959);
+    transform: rotateY(20deg);
+    transform-style: preserve-3d;
+    background: linear-gradient(-110deg, rgba(0, 0, 0, 0.658),rgba(255, 255, 255, 0.664));
+
+}
+
+.cardOne:hover {
+    background: linear-gradient(110deg, rgba(0, 0, 0, 0.658),rgba(255, 255, 255, 0.664))
+}
+
+
+.cardTwo {
+    width: 500px;
+    height: 710px;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5rem rgba(0, 0, 0, 0.959);
+    transform: rotateY(-20deg);
+    transform-style: preserve-3d;
+    background-color: rgba(0, 0, 0, 0.342);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 0.658),rgba(255, 255, 255, 0.664))
+}
+
+.cardTwo:hover {
+    background: linear-gradient(-110deg, rgba(0, 0, 0, 0.658),rgba(255, 255, 255, 0.664))
+}
+
+
+.card:hover {
+    transform: rotateY(360deg);
+    box-shadow: 0 15px 5rem rgba(0, 0, 0, 0.637);
+}
+
+.card .imgCard {
+    width: 500px;
+    position: relative; 
+    transform: none; 
+
+}
+
+.card .imgCard img {
+    width: 100%;
+    display: block;
+    transform: none;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+
+.card .textDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card .textDesc h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-style: italic;
+
+}
+
+.card .textDesc p {
+    width: 450px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    margin-top: 2rem;
+}
+
+.card .textDescTwo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .textDescTwo h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-style: italic;
+}
+
+.card .textDescTwo li {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.card .textDescTwo li p {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: rgb(66, 66, 66);
+
+}
+
+
+
+
+/*------ Footer ---------*/
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 1rem;
+}
+
+footer .icons a {
+    color: black;
+    font-size: 2rem;
+}
+
+footer .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+footer .address i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

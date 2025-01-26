@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 165px;
+    text-align: center;
+    background: black;
+}
+
+header .title {
+    font-size: 4rem;
+    color: white;
+    margin: 1rem;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-bar ul {
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar ul li {
+    display: inline;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-bar ul li:hover {
+    transform: translateY(-5px) scale(1.2);
+}
+
+.nav-bar ul li a:hover {
+    color: goldenrod;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
+
+/* -------- MAIN -------- */
+
+main {
+    width: 100%;
+    height: 485px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .title {
+    width: 30vw;
+    height: 400px;
+    opacity: 0;
+    transform: translate(20px);
+    animation: moveLeft 1s forwards 0.4s;
+}
+
+main .title .phrase {
+    width: 18vw;
+    
+}
+
+main .title .phrase h1 {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+main .photo {
+    width: 25vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+main .photo img {
+    width: 80%;
+    opacity: 0;
+    transform: translateY(2px);
+    animation: moveUp .5s forwards 0.1s;
+}
+
+main .caption {
+    width: 25vw;
+    height: 150px;
+    border-radius: 1rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(20px);
+    animation: moveRight 1s forwards 0.3s;
+}
+
+main .caption .text_cap {
+    width: 20vw;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: rgb(70, 70, 70);
+    border-radius: 1rem;
+    background-color: rgba(231, 231, 231, 0.466);
+    text-align: center;
+}
+
+
+@keyframes moveUp {
+    
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+    
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        opacity: 0;
+        transform: translateZ(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+/*Questions and Cards */
+
+.questions {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.box-g{
+    display: flex;
+    color: white;
+    gap: 1rem;
+}
+
+.questions .titleQuestion {
+    padding: 1.5rem;
+}
+
+.resp h2{
+    font-size: 3rem;
+    color: white;
+}
+
+.resp p {
+    color: rgb(70, 70, 70);
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+.questionOne img {
+    border-radius: 1rem;
+    width: 450px;
+}
+
+.questionTwo img {
+    width: 550px;
+    border-radius: 1rem;
+}
+
+.questionThree img{
+    width: 400px;
+    border-radius: 1rem;
+}
+
+.questionThree ul {
+    padding: 2rem;
+}
+
+.questionThree ul li {
+    color: rgb(70, 70, 70);
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+.questionFour {
+    margin-bottom: 2rem;
+}
+
+.questionFour img {
+    width: 400px;
+    border-radius: 1rem;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 1rem;
+}
+
+footer .icons a {
+    color: black;
+    font-size: 2rem;
+}
+
+footer .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+footer .address i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
